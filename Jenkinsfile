@@ -40,8 +40,8 @@ pipeline {
         
         stage ('code-backup-nexus') {
             steps {
-                configFileProvider([configFile(fileId: '8ef6d13f-c23f-406b-8b6f-19f30cc58d5c', variable: 'mavensettings')]) {
-                   sh "mvn -s $mavensettings clean deploy -DskipTest=true"
+                configFileProvider([configFile(fileId: '7d7840c3-b85c-4bbc-89b0-680d7c720dfc', variable: 'mavensettings')]) {
+                  sh "mvn -s $mavensettings clean deploy -DskipTest=true"
               }
             }
         }
