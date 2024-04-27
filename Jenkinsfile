@@ -49,7 +49,7 @@ pipeline {
         stage ('code-deploy-tomcat') {
             steps {
                 sshagent(['tomcat']) {
-                  sh " scp -o StrictHostKeyChecking=no /var/jenkins_home/workspace/Pipe_Devops_tools/target/HOME_LONE.war ec2-user@172.31.53.38:/opt/tomcat-9/webapps"
+                  sh " scp -o StrictHostKeyChecking=no /var/jenkins_home/workspace/Pipe_Devops_tools/target/HOME_LONE.war ec2-user@172.31.47.217:/opt/tomcat-9/webapps"
               } 
             }
         }
