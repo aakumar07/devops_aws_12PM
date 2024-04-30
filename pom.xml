@@ -28,7 +28,17 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
+ <distributionManagement>
+		 <snapshotRepository>
+		    <id>nexusRepo</id>
+		    <url>http://13.200.237.78:8081/repository/maven-snapshots/</url>
+		 </snapshotRepository>
+		
+		 <repository>
+		    <id>nexusRepo</id>
+		    <url>http://13.200.237.78:8081/repository/maven-releases/</url>
+		 </repository>
+  </distributionManagement>
   <build>
     <finalName>HOME_LONE</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
